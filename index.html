@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacation Time!</title>
+    <title>Sign Up Form</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,14 +16,28 @@
             <div>
                 <label for="firstname">Your First Name<span class="required-field">*</span>
                 </label>
-                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required> 
+                <input type="text" 
+                        id="firstname" 
+                        name="firstname" 
+                        minlength="2" 
+                        maxlength="35" 
+                        required/> 
                 <!-- TODO: Create a "lastname" input with type "text" -->
                 <label for="lastname">Your Last Name<span class="required-field">*</span>
                 </label>
-                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
+                <input type="text" 
+                        id="lastname" 
+                        name="lastname" 
+                        minlength="2" 
+                        maxlength="35" 
+                        required/>
 
                 <label for="age">Your Age</label>
-                <input type="number" id="age" name="age" min="21" max="120">
+                <input type="number"    
+                        id="age" 
+                        name="age" 
+                        min="21" 
+                        max="120"/>
                 <h5>One must be age 21 or older to enter the contest.</h5>
 
                 
@@ -40,9 +54,9 @@
             <!-- Todo: City, State, and Zip Inputs -->
             <div>
             <label for="city">Your city</label>
-            <input type="text" id="city" name="city">
+            <input type="text" id="city" name="city"/>
             <label for="state">Your state</label>
-            <input list="state-list" id="state" name="state">
+            <input list="state-list" id="state" name="state"/>
             <datalist id="state-list"> 
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -95,7 +109,7 @@
                 <option value="WY">Wyoming</option>
             </datalist>
             <label for="zip">Your zipcode</label>
-            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Digit US ZIP Code">
+            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="5-Digit US ZIP Code"/>
         </div>
         </fieldset>
 
@@ -105,19 +119,35 @@
                 <h3>Preferred Destination</h3>
             <!-- TODO: Radio buttons for selecting preferred destination -->
             <div>
-                <input type="radio" id="Aruba" name="location" value="Aruba" checked>
+                <input type="radio" 
+                        id="Aruba" 
+                        name="location" 
+                        value="Aruba" 
+                        checked/>
                 <label for="aruba">Aruba</label>
-            </div>
+            </div>  
             <div>
-                <input type="radio" id="Japan" name="location" value="Japan" checked>
+                <input type="radio" 
+                        id="Japan" 
+                        name="location" 
+                        value="Japan" 
+                        checked/>
                 <label for="Japan">Japan</label>
             </div>
             <div>
-                <input type="radio" id="Reykjavik" name="location" value="Reykjavik" checked>
+                <input type="radio" 
+                        id="Reykjavik" 
+                        name="location" 
+                        value="Reykjavik" 
+                        checked/>
                 <label for="Reykjavik">Reykjavik</label>
             </div>
             <div>
-                <input type="radio" id="New Zealand" name="location" value="New Zealand" checked>
+                <input type="radio" 
+                        id="New Zealand" 
+                        name="location" 
+                        value="New Zealand" 
+                        checked/>
                 <label for="New Zealand">New Zealand</label>
             </div>
             <!-- TODO: Color input for selecting favorite color -->
@@ -143,7 +173,7 @@
             </div>
         </fieldset>
             <!-- TODO: Submit Button -->
-            <input type="submit" value="Enter the Contest!">
+            <input type="submit" value="Enter the Contest!"/>
         </form>
     </main>
     <footer>
